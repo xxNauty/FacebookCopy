@@ -1,7 +1,7 @@
 export default function Footer() {
     return (
-        <div className="bg-white h-[243px] w-full fixed bottom-0 flex justify-center">
-            <div className="w-[980px] text-[#737373] text-xs text-justify pt-8 leading-5">
+        <div className="bg-white h-[243px] w-full fixed bottom-0 flex justify-center border">
+            <div className="w-[980px] text-[#737373] text-[12px] text-justify pt-7 leading-5">
                 <ul className="flex flex-wrap">
                     <li className="me-2.5">Polski</li>
                     <li className="me-2.5">English(US)</li>
@@ -15,7 +15,7 @@ export default function Footer() {
                     <li className="me-2.5">Português(Brasil)</li>
                     <li className="me-2.5">العربية</li>
                 </ul>
-                <hr className="h-px my-3 bg-[#dddfe2] border-0 "/>
+                <hr className="h-px my-2 bg-[#dddfe2] border-0 "/>
                 <ul className="flex flex-wrap">
                     <li className="me-4">Zarejestruj się</li>
                     <li className="me-4">Zaloguj się</li>
@@ -50,7 +50,7 @@ export default function Footer() {
                     <li className="me-4">Pomoc</li>
                     <li className="me-4">Przesyłanie listy kontaktów i osób niebędących użytkownikami</li>
                 </ul>
-                <div className="pt-6">
+                <div className="pt-4 text-[11px]">
                     Meta © 2024
                 </div>
             </div>
