@@ -8,7 +8,7 @@ export default function Form(){
     async function onSubmit(event: FormEvent<HTMLFormElement>){
         event.preventDefault();
 
-        console.log("qwerty");
+        console.log("Logowanie");
 
         // const formData = new FormData(event.currentTarget);
         // const response = await fetch('/', {

@@ -1,4 +1,5 @@
 export default function WelcomeInfo() {
+
     return (
         <div className="w-[420px] h-[400px] flex flex-col justify-start lg:mr-[100px]">
             <div className="text-[#0866ff] font-bold text-6xl pt-12 text-center lg:text-left"> facebook </div>
