@@ -1,7 +1,7 @@
 export default function Footer() {
 
     return (
-        <div className="bg-white h-[243px] w-full fixed bottom-0 flex justify-center border">
+        <div className="bg-white h-[243px] w-full fixed bottom-0 flex justify-center border-t">
             <div className="w-[980px] text-[#737373] text-[12px] text-justify pt-7 leading-5">
                 <ul className="flex flex-wrap">
                     <li className="me-2.5">Polski</li>
