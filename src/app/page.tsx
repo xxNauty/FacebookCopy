@@ -1,4 +1,4 @@
-import Footer from "@/app/ui/footer";
+import Footer from "@/app/common/footer";
 import Login from "@/app/ui/login";
 import WelcomeInfo from "@/app/ui/welcome-info";
 
@@ -11,7 +11,7 @@ export default function Home() {
                   <Login />
               </div>
           </div>
-          <Footer />
+          <Footer isFixed={true} />
       </>
   );
 }

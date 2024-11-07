@@ -2,10 +2,10 @@ import {FormEvent} from "react";
 
 export default function CreateNewAccount() {
 
-    async function handle(event: FormEvent<HTMLButtonElement>){
+    function handle(event: FormEvent<HTMLButtonElement>){
         event.preventDefault();
 
-        location.href = '/';
+        location.href = '/new-account';
     }
 
 
