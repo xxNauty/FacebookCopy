@@ -4,7 +4,7 @@ export default function Footer({isFixed} : {isFixed: boolean}) {
 
     return (
         <div className={clsx(
-            "bg-white h-[243px] w-full flex justify-center border-t",
+            "bg-white h-[243px] w-full flex justify-center border-t mx-3",
             {
                 "fixed bottom-0" : isFixed,
             }
@@ -23,7 +23,7 @@ export default function Footer({isFixed} : {isFixed: boolean}) {
                     <li className="me-2.5">Português(Brasil)</li>
                     <li className="me-2.5">العربية</li>
                 </ul>
-                <hr className="h-px my-2 bg-[#dddfe2] border-0 "/>
+                <hr className="h-px my-2 bg-[#dddfe2] border-0"/>
                 <ul className="flex flex-wrap">
                     <li className="me-4">Zarejestruj się</li>
                     <li className="me-4">Zaloguj się</li>

@@ -1,13 +1,6 @@
-import {FormEvent} from "react";
-
 export default function CreateNewAccount() {
 
-    function handle(event: FormEvent<HTMLButtonElement>){
-        event.preventDefault();
-
-        location.href = '/new-account';
-    }
-
+    function handle(){location.href = '/new-account';}
 
     return (
         <div className="w-full h-full text-center">

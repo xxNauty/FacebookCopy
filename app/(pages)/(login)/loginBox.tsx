@@ -1,7 +1,7 @@
-import Form from "@/app/ui/loginForm/loginForm";
-import CreateProfessionalAccount from "@/app/ui/createProfessionalAccount";
+import CreateProfessionalAccount from "./createProfessionalAccount";
+import Form from "./loginForm";
 
-export default function Login() {
+export default function LoginBox() {
 
     return (
         <div>

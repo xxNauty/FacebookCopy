@@ -1,19 +1,19 @@
 'use client'
 
 import React, {FormEvent} from "react";
-import DateOfBirth from "@/app/new-account/ui/dateOfBirth";
+import DateOfBirth from "./dateOfBirth";
 
-export default function Form(){
+export default function RegistrationForm(){
 
     function showHiddenGender(){
-        let hiddenGenderDiv = document.querySelector("#hidden_gender");
+        const hiddenGenderDiv = document.querySelector("#hidden_gender");
         if(hiddenGenderDiv?.classList.contains("hidden")){
             hiddenGenderDiv?.classList.remove("hidden");
         }
     }
 
     function hideHiddenGender(){
-        let hiddenGenderDiv = document.querySelector("#hidden_gender");
+        const hiddenGenderDiv = document.querySelector("#hidden_gender");
         if(!hiddenGenderDiv?.classList.contains("hidden")){
             hiddenGenderDiv?.classList.add("hidden");
         }
@@ -22,14 +22,13 @@ export default function Form(){
     async function submittedForm(event: FormEvent<HTMLFormElement>){
         event.preventDefault();
 
-        const formData = new FormData(event.currentTarget);
-        const response = await fetch('/new-account', {
-            method: 'POST',
-            body: formData,
-        })
+        // const formData = new FormData(event.currentTarget);
+        // const response = await fetch('/new-account', {
+        //     method: 'POST',
+        //     body: formData,
+        // })
 
-        console.log(formData.entries().toArray());
-        // const data = await response.json();
+        console.log();
     }
 
     return (

@@ -34,19 +34,24 @@ export default function DateOfBirth() {
 
     const currentYear = new Date().getFullYear();
 
+    //-----------------------------------------------------
+
+    const [selectedDay, setSelectedDay] = useState(new Date().getDate());
+
+
     return (
         <div>
             <p className="text-left text-[12px] text-[#606770] mt-3 mb-1">Data urodzenia</p>
-            {/*todo: naprawić default value*/}
-            <select defaultValue={new Date().getDate() + 1} className="w-[123px] h-[34px] mr-3 border rounded-md" id="dayOfMonth" name="day">
+            <select value={selectedDay} onChange={(e) => setSelectedDay(Number(e.target.value))} 
+                className="w-[123px] h-[34px] mr-3 border rounded-md" id="dayOfMonth" name="day">
                 {options.map((option) => (
                     <option key={option + 1} value={option + 1}>
                         {option + 1}
                     </option>
                 ))}
             </select>
-            <select onChange={setLastDayOfMonth} id="month" defaultValue={new Date().getMonth()}
-                    className="w-[123px] h-[34px] border rounded-md mr-3" name="month">
+            <select onChange={setLastDayOfMonth} defaultValue={new Date().getMonth()}
+                    className="w-[123px] h-[34px] border rounded-md mr-3" id="month" name="month">
                 <option value="0">sty</option>
                 <option value="1">lut</option>
                 <option value="2">mar</option>
